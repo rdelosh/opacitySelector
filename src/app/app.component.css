@@ -6,7 +6,7 @@ p {
   background-color:darkolivegreen;
 }
 .colorTwo{
-  background-color:rgb(44, 123, 113);
+  background-color:rgba(44, 123, 112, 0.123);
 }
 
 .colorThree{

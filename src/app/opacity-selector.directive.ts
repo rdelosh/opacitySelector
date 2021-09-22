@@ -15,11 +15,12 @@ export class OpacitySelectorDirective implements AfterViewInit {
     let splitColors = colorParemeters.split(',');
     let opacity = '0.25';
     if(splitColors.length > 3){
-      splitColors[splitColors.length-1] = opacity;
+      splitColors[splitColors.length-1] = +opacity/2 +'';
     } else{
       splitColors.push(opacity);
     }
     let newColors = 'rgba('+splitColors.join(',')+')' 
+    
 
     this.rend.setStyle(this.elem.nativeElement.parentElement,'backgroundColor',newColors)
     
