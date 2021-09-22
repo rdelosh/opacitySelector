@@ -20,10 +20,7 @@ export class OpacitySelectorDirective implements AfterViewInit {
       splitColors.push(opacity);
     }
     let newColors = 'rgba('+splitColors.join(',')+')' 
-    
-    
 
-    console.log(originalColor)
     this.rend.setStyle(this.elem.nativeElement.parentElement,'backgroundColor',newColors)
     
     }
